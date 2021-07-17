@@ -1,0 +1,121 @@
+module.exports=`
+
+/**/
+.zp124 {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    user-select: none;
+}
+
+.zp124:hover {
+    border-color: #40a9ff;
+}
+
+.zp124box {
+    position: relative;
+    margin: 3px;
+    min-height: 24px;
+}
+
+.zp124box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.zp124box li {
+    height: 24px;
+    line-height: 22px;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+    padding: 0 6px 0 10px;
+    background-color: #fafafa;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.zp124box svg {
+    margin-left: 4px;
+    color: rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 12px;
+    line-height: inherit;
+    transform: scale(0.83333333) rotate(0deg);
+}
+
+.zp124box svg:hover {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.zp124box input {
+    width: 6em;
+    height: 24px;
+    padding-left: 4px;
+    line-height: 1;
+    border-width: 0;
+    outline: 0;
+}
+
+.zp124drop {
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1050;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-variant: initial;
+    background-color: #fff;
+    border-radius: 2px;
+    max-height: 250px;
+    width: 100%;
+    margin: 4px 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.zp124drop li {
+    position: relative;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.zp124drop li.selected {
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 600;
+    background-color: #fafafa;
+}
+
+.zp124drop li:hover {
+    background-color: #e6f7ff;
+}
+
+.zp124drop svg {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    color: transparent;
+    color: #1890ff;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 0 0.1px 0, 0.1px 0 0, 0 -0.1px 0, -0.1px 0;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+}
+
+.zcell .zp124 {
+    width: 100%;
+    border: none;
+}
+
+`
