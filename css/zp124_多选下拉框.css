@@ -32,7 +32,7 @@ module.exports=`
     line-height: 22px;
     position: relative;
     float: left;
-    margin-right: 4px;
+    margin: 0 4px 2px 0;
     padding: 0 6px 0 6px;
     background-color: #fafafa;
     border: 1px solid #e8e8e8;
