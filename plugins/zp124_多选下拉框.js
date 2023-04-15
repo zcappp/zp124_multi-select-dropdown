@@ -43,7 +43,7 @@ function click(ref, v) {
         if (!Array.isArray(values)) values = []
         values.indexOf(v) > -1 ? values.splice(values.indexOf(v), 1) : values.push(v)
         ref.setForm(props.dbf, values)
-        if (props.onChange) ref.exc(props.onChange, { ...ref.ctx, $x: v })
+        if (props.change) ref.exc(props.change, { ...ref.ctx, $x: v })
     }
 }
 
@@ -56,7 +56,7 @@ function keyDown(ref, e) {
             if (e.target.value) return
             values.pop()
             ref.setForm(props.dbf, values)
-            if (props.onChange) ref.exc(props.onChange, { ...ref.ctx, $x: v })
+            if (props.change) ref.exc(props.change, { ...ref.ctx, $x: v })
             break
         case 13: // Enter 移动端无回车键
         case 188: // ,    移动端无法触发
@@ -65,7 +65,7 @@ function keyDown(ref, e) {
             ref.input = ""
             values.push(e.target.value)
             ref.setForm(props.dbf, values)
-            if (props.onChange) ref.exc(props.onChange, { ...ref.ctx, $x: v })
+            if (props.change) ref.exc(props.change, { ...ref.ctx, $x: v })
             break
     }
 }
@@ -108,7 +108,7 @@ $plugin({
         type: "switch",
         label: "允许用户通过回车键或逗号添加选项"
     }, {
-        prop: "onChange",
+        prop: "change",
         type: "exp",
         label: "onChange表达式"
     }],
