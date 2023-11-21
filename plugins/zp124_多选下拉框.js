@@ -23,8 +23,8 @@ function render(ref) {
 }
 
 function init(ref) {
-    const { exc, props, render } = ref
-    ref.options = exc('clone(o)', { o: props.options || ref.children })
+    const { excA, props, render } = ref
+    ref.options = excA('clone(o)', { o: props.options || ref.children })
     if (!Array.isArray(ref.options)) ref.options = []
     ref.clickOutside = e => {
         if (ref.container.contains(e.target)) return // Do nothing if clicking on container's element or descendent elements
