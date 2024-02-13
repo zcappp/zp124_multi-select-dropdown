@@ -1,5 +1,5 @@
 import React from "react"
-import css from "../css/zp124_多选下拉框.css"
+import css from "./zp124_多选下拉框.css"
 
 function render(ref) {
     const { input } = ref
